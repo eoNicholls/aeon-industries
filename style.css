@@ -53,15 +53,17 @@ li {
 
 #current-page-nav-btn {
 	border-bottom: 1px solid #cccccc;
+	pointer-events: none;
+	cursor: default;
 }
 
-a {
+nav a, nav p {
 	text-decoration: none;
 	color: #999999;
 	transition: all linear 200ms;
 }
 
-a:hover {
+nav a:hover {
 	color: #dddddd;
 }
 
@@ -76,14 +78,11 @@ a:hover {
 	flex-shrink: 3;
 }
 
-p {
-	font-family: 'Roboto', serif;
-	font-size: 1.3rem;
-}
-
 .content p {
 	max-width: 30rem;
 	padding-bottom: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3rem;
 }
 
 .content-images {
@@ -94,4 +93,15 @@ p {
 	max-width: inherit;
 	height: auto;
 	padding-bottom: 3rem;
+}
+
+footer {
+	margin: 2rem 0;
+	text-align: center;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+footer p {
+	font-size: inherit;
 }
