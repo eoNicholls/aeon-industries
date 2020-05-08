@@ -95,6 +95,11 @@ nav a:hover {
 	padding-bottom: 3rem;
 }
 
+#contact-details {
+	text-align: center;
+	margin-bottom: 10rem;
+}
+
 footer {
 	margin: 2rem 0;
 	text-align: center;
