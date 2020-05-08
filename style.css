@@ -7,7 +7,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	background: #242424;
-	color: #f8f8f8;
+	color: #bbbbbb;
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -17,6 +17,7 @@ h1 {
 	font-size: 3rem;
 	letter-spacing: 0.2rem;
 	margin-top: 1rem;
+	color: #cccccc;
 }
 
 .main-h1 {
@@ -51,16 +52,17 @@ li {
 }
 
 #current-page-nav-btn {
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #cccccc;
 }
 
 a {
 	text-decoration: none;
-	color: #cccccc;
+	color: #999999;
+	transition: all linear 200ms;
 }
 
 a:hover {
-	color: inherit;
+	color: #dddddd;
 }
 
 .content {
@@ -72,6 +74,11 @@ a:hover {
 .content-child {
 	margin: 0 1rem;
 	flex-shrink: 3;
+}
+
+p {
+	font-family: 'Roboto', serif;
+	font-size: 1.3rem;
 }
 
 .content p {
