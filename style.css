@@ -66,18 +66,25 @@ a:hover {
 .content {
 	margin: 3rem 3rem;
 	display: flex;
+	justify-content: center;
 }
 
 .content-child {
 	margin: 0 1rem;
+	flex-shrink: 3;
 }
 
 .content p {
+	max-width: 30rem;
 	padding-bottom: 1rem;
 }
 
-.content img {
+.content-images {
 	max-width: 380px;
+}
+
+.content img {
+	max-width: inherit;
 	height: auto;
 	padding-bottom: 3rem;
 }
