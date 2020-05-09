@@ -7,17 +7,17 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	background: #242a2e;
+	background: #141a1e;
 	color: #bbbbbb;
 	font-family: 'Roboto Slab', serif;
 }
 
 h1 {
-	display: block;
+	grid-column: 1 / span 2;
+	margin: 1rem 0;
 	text-align: center;
 	font-size: 3rem;
 	letter-spacing: 0.2rem;
-	margin-top: 1rem;
 	color: #cccccc;
 }
 
@@ -30,26 +30,23 @@ h1 {
 }
 
 nav {
-	width: 100%;
-	margin: 1rem 0;
+	width: 90%;
+	margin: 1rem auto;
+	border-bottom: 2px groove #242a2e;
 }
 
 .index-nav {
-	width: 100%;
-	margin-top: 50px;
+	width: 90%;
+	padding: 1rem 0;
+	border-top: 2px groove #242a2e;
+	border-bottom: 2px groove #242a2e;
 }
 
 ul {
 	list-style: none;
-	padding: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-}
-
-nav li {
-	font-size: 2rem;
-	padding-bottom: 1rem;
 }
 
 #current-page-nav-btn {
@@ -58,7 +55,12 @@ nav li {
 	cursor: default;
 }
 
-nav a, nav p {
+nav li {
+	font-size: 1.7rem;
+}
+
+nav a {
+	padding: 0 0.5rem;
 	text-decoration: none;
 	color: #999999;
 	transition: all linear 200ms;
@@ -69,22 +71,25 @@ nav a:hover {
 }
 
 main {
-	margin: 1rem 7rem;
+	margin: 0 7rem;
 	display: grid;
 	grid-template: auto / 2fr 1fr;
+	/*background: #ffffff10;
+	border-radius: 3px;*/
 }
 
 main p {
 	max-width: 35rem;
-	margin: 1rem 0;
+	margin: 1rem;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.3rem;
 }
 
 main img {
 	max-width: min(25rem, 95%);
+	margin: 1rem 0;
 	height: auto;
-	margin: 1.5rem;
+	border-radius: 2px;
 }
 
 #contact-details {
@@ -105,7 +110,7 @@ footer p {
 
 @media screen and (max-width: 1100px) {
 	main {
-		margin: 1rem 3rem;
+		margin: 0 3rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -113,12 +118,11 @@ footer p {
 }
 
 @media screen and (max-width: 500px) {
-	* {
-		font-size: 0.75rem;
+	html {
+		font-size: 0.80rem;
 	}
 
 	nav li {
 		font-size: 1.5rem;
-		padding-bottom: 1rem;
 	}
 }
