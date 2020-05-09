@@ -82,7 +82,7 @@ main p {
 }
 
 main img {
-	max-width: 25rem;
+	max-width: min(25rem, 95%);
 	height: auto;
 	margin: 1.5rem;
 }
@@ -113,6 +113,10 @@ footer p {
 }
 
 @media screen and (max-width: 500px) {
+	* {
+		font-size: 0.75rem;
+	}
+
 	nav li {
 		font-size: 1.5rem;
 		padding-bottom: 1rem;
