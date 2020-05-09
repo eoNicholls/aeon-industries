@@ -12,6 +12,10 @@ html, body {
 	font-family: 'Roboto Slab', serif;
 }
 
+#index-splash {
+		margin-top: 55vh;
+}
+
 h1 {
 	grid-column: 1 / span 2;
 	margin: 1rem 0;
@@ -24,7 +28,6 @@ h1 {
 .index-h1 {
 	display: block;
 	text-align: center;
-	margin-top: 25%;
 	font-size: 5rem;
 	letter-spacing: 0.5rem;
 }
