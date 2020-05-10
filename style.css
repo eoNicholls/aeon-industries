@@ -20,7 +20,7 @@ h1 {
 	grid-column: 1 / span 2;
 	margin: 1rem 0;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 4rem;
 	letter-spacing: 0.2rem;
 	color: #cccccc;
 }
@@ -53,13 +53,14 @@ ul {
 }
 
 #current-page-nav-btn {
+	color: #cccccc;
 	border-bottom: 1px solid #cccccc;
 	pointer-events: none;
 	cursor: default;
 }
 
 nav li {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
 nav a {
@@ -74,11 +75,9 @@ nav a:hover {
 }
 
 main {
-	margin: 0 7rem;
+	margin: 0 3rem;
 	display: grid;
 	grid-template: auto / 2fr 1fr;
-	/*background: #ffffff10;
-	border-radius: 3px;*/
 }
 
 main p {
@@ -86,6 +85,7 @@ main p {
 	margin: 1rem;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.3rem;
+	font-weight: 300;
 }
 
 main img {
@@ -98,6 +98,9 @@ main img {
 #contact-details {
 	text-align: center;
 	margin-bottom: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 footer {
@@ -113,7 +116,7 @@ footer p {
 
 @media screen and (max-width: 1100px) {
 	main {
-		margin: 0 3rem;
+		margin: 0 1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -126,6 +129,6 @@ footer p {
 	}
 
 	nav li {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 }
