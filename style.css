@@ -12,8 +12,9 @@ html, body {
 	font-family: 'Roboto Slab', serif;
 }
 
-#index-splash {
-		margin-top: 55vh;
+#index-img {
+	max-width: 100%;
+	height: auto;
 }
 
 /*--------------------------------------------------------------------*/
